@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+<div class="container-fluid px-0 my-0">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?cs=srgb&dl=pexels-soumil-kumar-735911.jpg&fm=jpg&h=600&w=1600&fit=crop&_gl=1*1dwytye*_ga*MjAzNTY5NzUwMi4xNjg0NTUzMDk0*_ga_8JE65Q40S6*MTY4NDU1MzA5NS4xLjEuMTY4NDU1NjQwMS4wLjAuMA.." class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to the DS gaming centre</h5>
+          <p>We have 10+ playstations to play with extra comfort gaming chairs </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/194511/pexels-photo-194511.jpeg?cs=srgb&dl=pexels-lalesh-aldarwish-194511.jpg&fm=jpg&h=600&w=1600&fit=crop&_gl=1*1pm7dq1*_ga*MjAzNTY5NzUwMi4xNjg0NTUzMDk0*_ga_8JE65Q40S6*MTY4NDU1ODQyMi4yLjEuMTY4NDU1ODQzMy4wLjAuMA.." class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Best gaming centre in our area</h5>
+          <p>You can also buy games for pc and playstations</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/9072376/pexels-photo-9072376.jpeg?cs=srgb&dl=pexels-yan-krukau-9072376.jpg&fm=jpg&h=600&w=1600&fit=crop&_gl=1*158ugv2*_ga*MjAzNTY5NzUwMi4xNjg0NTUzMDk0*_ga_8JE65Q40S6*MTY4NDU1ODQyMi4yLjEuMTY4NDU1ODU1OC4wLjAuMA.." class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Do hard core gaming</h5>
+          <p>Give hard plesure to your gameplay with our services</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+<div class="album py-0 bg-light">
+  <div class="container">
+    <h1 style=""  class="my-3  text-center  text-dark ">Select games from our range</h1>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://w0.peakpx.com/wallpaper/533/461/HD-wallpaper-gta-v-games-gta-v-2012-rockstars-5-logo-new-official-grand-theft-auto-thumbnail.jpg" href="/about"  class="d-block w-100" alt="...">                                       
+          <div class="card-body">
+            <p class="card-text">Grand Theft Auto V is an action-adventure game played from either a third-person or first-person perspective.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/gtav"><button type="button"  class="btn btn-sm btn-outline-secondary">View</button></a>
+                {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="static/game1.jpg" class="d-block w-100" alt="...">                    
+        
+          <div class="card-body">
+            <p class="card-text">In God of War, players control Kratos, a Spartan warrior who is sent by the Greek gods to kill Ares, the god of war.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/godofwar"><button type="button"  class="btn btn-sm btn-outline-secondary">View</button></a>
+                {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="static/game2.png" class="d-block w-100" alt="...">  
+          <div class="card-body">
+            <p class="card-text">Miles possesses similar spider-based abilities as Peter Parker; he has the proportionate strength, speed and stamina of a spider.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/spiderman"><button type="button"  class="btn btn-sm btn-outline-secondary">View</button></a>
+                {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="static/game3.jpg" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text">PUBG is an intense multiplayer battle royale game where players parachute onto an island, scavenge for weapons, and fight to survive.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/pubg"><button type="button"  class="btn btn-sm btn-outline-secondary">View</button></a>
+                {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="static/game4.jpg" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text">Forza Horizon 5 is an immersive open-world racing game with stunning graphics, a wide variety of cars, and dynamic multiplayer experiences.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/forza"><button type="button"  class="btn btn-sm btn-outline-secondary">View</button></a>
+                {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="static/game5.png" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text">Minecraft is a creative sandbox game where players can build, explore, and survive in a blocky, procedurally generated world.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/minecraft"><button type="button"  class="btn btn-sm btn-outline-secondary">View</button></a>
+                
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}
+
